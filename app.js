@@ -35,3 +35,9 @@ function mettreAJour() {
     });
     afficher(resultat);
 }
+const champRecherche = document.getElementById("recherche");
+
+champRecherche.addEventListener("input", function () {
+  texteRecherche = champRecherche.value.toLowerCase();
+  mettreAJour();
+});
