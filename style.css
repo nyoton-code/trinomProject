@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 16px;
+    background: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #2e7d32;
+}
+
+#liste {
+    list-style: none;
+    padding: 0;
+}
+
+#liste li {
+    background: white;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.badge {
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    color: white;
+}
+
+.rouge {
+    background: #e53935;
+}
+
+.jaune {
+    background: #fbc02d;
+}
+
+.vert {
+    background: #43a047;
+}
+
+.orange {
+    background: #fb8c00;
+}
+
+#recherche {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+#filtres {
+    margin: 12px 0;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.filtre {
+    padding: 6px 12px;
+    border: 1px solid #2e7d32;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filtre.actif {
+    background: #2e7d32;
+    color: white;
+}
+
+#compteur {
+    font-weight: bold;
+    color: #555;
+}

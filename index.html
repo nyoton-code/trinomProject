@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liste des fruits</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Liste des fruits</h1>
+
+    <input type="text" id="recherche" placeholder="Rechercher un fruit..." />
+
+    <div id="filtres">
+      <button class="filtre actif" data-couleur="tous">Tous</button>
+      <button class="filtre" data-couleur="rouge">Rouge</button>
+      <button class="filtre" data-couleur="jaune">Jaune</button>
+      <button class="filtre" data-couleur="vert">Vert</button>
+      <button class="filtre" data-couleur="orange">Orange</button>
+    </div>
+
+    <p id="compteur"></p>
+    <ul id="liste"></ul>
+    <script src="app.js"></script>
+  </body>
+</html>
