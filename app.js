@@ -35,6 +35,13 @@ function mettreAJour() {
     });
     afficher(resultat);
 }
+
+function mettreAJourCompteur(nombre) {
+  document.getElementById("compteur").textContent = nombre + " fruit(s) affiché(s)";
+}
+
+
+mettreAJour();
 const champRecherche = document.getElementById("recherche");
 
 champRecherche.addEventListener("input", function () {
