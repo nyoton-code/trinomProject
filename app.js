@@ -21,7 +21,7 @@ function afficher(tableau) {
             ' <span class="badge ' + fruit.couleur + '">' + fruit.couleur + '</span>';
         liste.appendChild(li);
     });
-    mettreAJourCompteur(tableau.length); // feature/counter
+    mettreAJourCompteur(tableau.length);
 }
 
 let texteRecherche = "";
@@ -42,3 +42,9 @@ function mettreAJourCompteur(nombre) {
 
 
 mettreAJour();
+const champRecherche = document.getElementById("recherche");
+
+champRecherche.addEventListener("input", function () {
+  texteRecherche = champRecherche.value.toLowerCase();
+  mettreAJour();
+});
