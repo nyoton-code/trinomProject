@@ -46,6 +46,6 @@ boutons.forEach(function (bouton) {
 
         bouton.classList.add("actif");
         couleurChoisie = bouton.dataset.couleur;
-        mettreAJour();
+      
     });
 });
