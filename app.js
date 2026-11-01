@@ -36,6 +36,18 @@ function mettreAJour() {
     afficher(resultat);
 }
 
+const boutons = document.querySelectorAll(".filtre");
+
+boutons.forEach(function (bouton) {
+    bouton.addEventListener("click", function () {
+        boutons.forEach(function (b) {
+            b.classList.remove("actif");
+        });
+
+        bouton.classList.add("actif");
+        couleurChoisie = bouton.dataset.couleur;
+      
+    });
 function mettreAJourCompteur(nombre) {
   document.getElementById("compteur").textContent = nombre + " fruit(s) affiché(s)";
 }
